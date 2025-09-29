@@ -18,7 +18,7 @@ class WeatherResponse(BaseModel):
     temperature: float
     humidity: float
 
-OPENWEATHER_API_KEY = "bd5e378503939ddaee76f12ad7a97608"
+OPENWEATHER_API_KEY = ""
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 
 @app.get("/weather", response_model=WeatherResponse)
