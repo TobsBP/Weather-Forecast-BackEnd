@@ -1,0 +1,23 @@
+[project]
+name = "weather-forecast-backend"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Tobias",email = "tobias.bp2004@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.118.0,<0.119.0)",
+    "pydantic (>=2.11.9,<3.0.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+    "uvicorn (>=0.37.0,<0.38.0)"
+]
+
+[tool.poetry]
+packages = [{include = "weather_forecast_backend", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

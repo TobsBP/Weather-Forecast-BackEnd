@@ -1,0 +1,1 @@
+poetry run uvicorn src.weather_forecast_backend.main:app --reload --port 8000
